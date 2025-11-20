@@ -1,0 +1,12 @@
+node_modules
+.git
+.gitignore
+.vscode
+.tanstack
+*.log
+dist
+.output
+README.md
+.cursorrules
+.cta.json
+todos.json
