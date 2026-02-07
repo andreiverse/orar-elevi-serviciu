@@ -3,10 +3,13 @@ version: '3.8'
 services:
   orar-app:
     build: .
-    ports:
-      - "3000:3000"
     volumes:
       - ./config.json:/app/config.json:ro
     restart: unless-stopped
     environment:
       - NODE_ENV=production
+    networks:
+      - bubunet
+networks:
+  bubunet:
+    external: true
